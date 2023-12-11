@@ -14,5 +14,5 @@ npm run dev
 
 Need to create environment for development
 
-![postman environment variable](![image](https://github.com/Mintaa911/test_task/assets/61611671/c2817228-7b26-48ea-973e-08dc63c95aa8)
-)
+![postman create environment variable](https://github.com/Mintaa911/test_task/assets/61611671/c2817228-7b26-48ea-973e-08dc63c95aa8)
+
