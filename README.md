@@ -10,6 +10,25 @@ npm install
 npm run dev
 ```
 
+## setup environment for locally
+
+The project will be using PostgreSQL as a database and need to create a database locally. choose preferred name for database.
+
+Replace the database name and password inside `/config/index.js` file
+
+Email used for sending notifications is a test email created for this project
+
+set environment on local. create `.env` file inside the root folder. 
+
+### set the environment variable values
+
+```
+STRIPE_SECRET_KEY="sk_test_51OM0G7GRyHi2kd9oDov7gnCAj0djwBiAw2qfYCeIXpujpyKq78BqgUxNi3SvwxVrKLiPUPZj54OzL624DFsDwByD009X0mldgF"
+PORT=3000
+STRIPE_PRODUCT_ONE_PRICE_ID=price_1OM0qIGRyHi2kd9oFlTEtqlo
+```
+
+
 ## Postman Collection
 
 Need to create environment for development
