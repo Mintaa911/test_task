@@ -7,8 +7,8 @@ const transporter = nodemailer.createTransport({
     port: 465,
     secure: true,
     auth: {
-        user: "your_email@gmail.com",
-        pass:  "email_password",
+        user: "amirtest798@gmail.com",
+        pass:  "wgwyzidawhtmtdxf",
     },
 });
 
@@ -20,7 +20,7 @@ module.exports = {
 // Function to send email notification
 function sendEmailNotification(task) {
     const mailOptions = {
-      from: "your_email@gmail.com",
+      from: "amirtest798@gmail.com",
       to: task.assigned_to,
       subject: 'New Task Assigned',
       text: `A new task has been assigned to you.\nTitle: ${task.title}\nDescription: ${task.description}`,

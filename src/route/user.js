@@ -14,5 +14,7 @@ router.get('/:id', findById)
 router.put('/:id',updateUser)
 
 router.post('/subscribe/:id',subscribePayment)
+router.post('/unsubscribe/:id',subscribePayment)
+
 
 module.exports  = router
