@@ -15,7 +15,7 @@ async function create(tableName, fields) {
     try {
         const result = await db(tableName).insert({
             ...fields 
-            }).returning('*')
+            }).returning('id', 'name', 'email', 'role')
         return result
     } catch (error) {
         console.debug({
@@ -28,7 +28,7 @@ async function create(tableName, fields) {
 
 async function find(tableName,conditions) {
     try {
-        const user = await db(tableName).select('*').where(conditions)
+        const user = await db(tableName).select('id', 'name', 'email', 'role').where(conditions)
         return user
     } catch (error) {
         console.debug({
@@ -43,7 +43,7 @@ async function update(tableName, fields, conditions) {
     try {
         const result = await db(tableName).update({
             ...fields 
-            }).where({...conditions}).returning('*');
+            }).where({...conditions}).returning('id', 'name', 'email', 'role');
         return result
     } catch (error) {
         console.debug({

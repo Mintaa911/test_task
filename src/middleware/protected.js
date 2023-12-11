@@ -18,7 +18,6 @@ function checkUserRole(req, res, next) {
       if (err) {
         return res.status(401).json({ error: 'Unauthorized - Invalid token' });
       }
-      console.log(decoded)
       // Check if the user has the required role
       if (decoded && decoded.role === 'admin') {
         next(); // User has the required role, proceed to the next middleware/route
